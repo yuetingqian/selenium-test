@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="test Demo" verbose="10">
+<!--   <parameter name="selenium.host" value="localhost" />
+  <parameter name="selenium.port" value="3737" />
+  <parameter name="selenium.browser" value="*firefox" />
+  <parameter name="selenium.url" value="http://demo.opensourcecms.com/wordpress/" /> -->
+ 
+  <test name="Write new post" preserve-order="true">
+    <classes>
+      <class name="com.selenium.app.selenium_test.TestNGTest">
+        <methods>
+          <include name="aFastTest" />
+          <include name="aSlowTest" />
+          <include name="webTest" />
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
+
